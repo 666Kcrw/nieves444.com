@@ -3,64 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
+  <title>Mi Página Web Moderna</title>
   <style>
+    /* Estilos básicos */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
+
+    /* Encabezado y navegación */
     header {
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
       padding: 1rem 0;
-    }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    footer {
       text-align: center;
-      padding: 10px 0;
-      background-color: #333;
-      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    a {
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
       color: #4CAF50;
       text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* Secciones */
+    section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+      color: #ff9800;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.8);
+      margin-top: auto;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Reproductor oculto */
+    #music {
+      display: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi página</h1>
+    <h1>Bienvenido a Mi Página Moderna</h1>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#contact">Contacto</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>Sobre mí</h2>
     <p>Hola, soy [tu nombre]. Aquí encontrarás información sobre mí, mis proyectos y cómo contactarme.</p>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contacto</h2>
     <p>Si quieres ponerte en contacto conmigo, puedes enviarme un correo a: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a>.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Mi Página Web Moderna. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Reproductor de música -->
+  <audio id="music" autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+
+  <script>
+    // Reproduce la música al cargar la página
+    window.addEventListener('DOMContentLoaded', () => {
+      const music = document.getElementById('music');
+      music.volume = 0.2; // Ajusta el volumen
+      music.play();
+    });
+  </script>
 </body>
 </html>
