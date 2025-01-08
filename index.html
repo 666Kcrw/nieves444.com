@@ -1,192 +1,66 @@
-<!DOCTYPE html><html lang="en"><head>
-
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@Un</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  
-  
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/texteffect.css" rel="stylesheet">
-  <meta property="og:title" content="@Undefined_Name">
-  <meta property="og:type" content="Undefined name site">
-  <meta property="og:url" content="https://undefinedname.es">
-  <meta property="og:description" content="My bio🤍">
-  <meta name="theme-color" content="#111">
-  <link rel="icon" type="image/x-icon" href="images/stolaspfpbyundefinedname.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
   <style>
     body {
-      background: #111;
-      color: #ccc;
-      font-family: 'Platypi', sans-serif;
-      overflow: hidden; /* Para evitar scrollbars */
-      position: relative; /* Necesario para la posición de las gotas */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
     }
-
-    .loading-message {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #ccc;
+    header {
+      background-color: #4CAF50;
+      color: white;
       text-align: center;
-      font-size: 24px;
-      animation: pulse 1s infinite alternate;
-      z-index: 9999;
+      padding: 1rem 0;
     }
-
-    @keyframes pulse {
-      0% {
-        opacity: 0.5;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .content {
-      display: none;
-    }
-
-    .navbar-ul {
-      display: none;
-    }
-
-    .prevent-inspect {
-      display: none !important;
-    }
-
-    html {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    .aboutme-container {
-      color: #fff;
-      font-family: 'Platypi', sans-serif;
+    section {
+      max-width: 800px;
+      margin: 20px auto;
       padding: 20px;
-      margin-top: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-
-    .aboutme-container h2 {
-      color: #4ca3ff;
+    h1, h2 {
+      color: #4CAF50;
     }
-
-    .aboutme-container table {
-      color: #fff;
-      font-size: 16px;
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: white;
     }
-
-    /* Estilo para el GIF de fondo */
-    .background-gif {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; /* Enviar el GIF detrás de todo */
-      object-fit: cover; /* Asegura que el GIF cubra toda la pantalla */
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
-
 </head>
+<body>
+  <header>
+    <h1>Bienvenido a mi página</h1>
+  </header>
 
-<body onkeydown="playMusic()">
-  <img class="background-gif" src="images/171978022ca6c421474dc7a3bb2f95e11e869dder1-640-427_hq.gif" alt="Fondo de lluvia">
-
-  <div class="loading-message">Presiona una tecla para continuar...</div>
-
-  <ul class="navbar-ul">
-    <a href="https://www.instagram.com/hacking.tel/" class="social-link" target="_blank">✨ Follow me on Instagram ✨</a>
-    <a href="https://beatleader.xyz/u/undefined_name" class="social-link" target="_blank">🎮 Beat Saber</a>
-    <a href="https://www.twitch.tv/g3_skwox" class="social-link" target="_blank">📺 Twitch</a>
-    <a href="https://discord.gg/8D4y8v2VmW" class="social-link" target="_blank">💬 Discord Server</a>
-  </ul>
-
-  <section style="color: #ccc; font-family: 'Platypi', sans-serif;" class="content">
-    <div class="main-container">
-      <div class="environment"></div>
-      <h2 class="hero glitch layers" data-text="Undefined Name" style="color: rgb(255, 255, 255);">
-        <span>Undefined name</span>
-      </h2>
-      <p class="modder-text">hacker,modder of videogames,cybersecurity,bug hunter,locksmith,computing forensic,telecommunications engineering,hardware,computer engineering,fortnite map creator,programmer and i optimize computers   | bisexual💞 | furry 🤍 | femboy💜|    +8k earned in fortnite</p>
-      <p class="modder-text">discord server moderator</p>
-      <p class="modder-text">pro player rocket league,beat saber,fortnite</p>
-      <p class="modder-text">477🫂</p>
-      <p class="modder-text">future actor +18💘</p>
-    </div>
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Hola, soy [tu nombre]. Aquí encontrarás información sobre mí, mis proyectos y cómo contactarme.</p>
   </section>
 
-  <div class="center content">
-    <img class="center" style="max-width: 100%; height: auto" src="images/362953046587604994.png" alt="Discord"><br>
+  <section>
+    <h2>Contacto</h2>
+    <p>Si quieres ponerte en contacto conmigo, puedes enviarme un correo a: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a>.</p>
+  </section>
 
-  <audio id="backgroundMusic" loop="">
-    <source src="media/Lady%20Gaga%2C%20BLACKPINK%20-%20Sour%20Candy%20%28Audio%29%20%28online-audio-converter.com%29.mp3" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
-  </audio>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-<style>
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
-    text-align: center;
-    padding: 15px 20px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    font-family: 'Platypi', sans-serif;
-    z-index: 9999;
-  }
-
-  footer p {
-    margin: 0;
-    line-height: 1.5;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.2rem;
-  }
-
-  @media (max-width: 768px) {
-    footer p {
-      font-size: 1rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    footer p {
-      font-size: 0.9rem;
-    }
-  }
-</style>
-
-<footer>
-  <p>La vida es muy frágil y se puede ir en nada</p>
-</footer>
-
-
-</div></body></html>
+  <footer>
+    <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
